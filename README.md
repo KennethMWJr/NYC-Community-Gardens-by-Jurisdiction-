@@ -13,13 +13,14 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Sep 10th| Project Description/ wireframes & Priority Matrix/ Pseudocode | Incomplete
-|Sep 11th| Set up HTML for overall layout / JS for the form component | Incomplete
-|Sep 12th| Program CSS / JS | Incomplete
-|Sep 13th|  MVP | Incomplete
-|Sep 14th| n/a | Incomplete
-|Sep 15th| n/a | Incomplete
+|Sep 10th| Project Proposal 
+|Sep 11th| Find external Api 
+|Sep 12th| Render garden name in drop down list 
+|Sep 13th| Allow user to enter garden name 
+|Sep 14th|Render jurisdiction
+|Sep 15th| add placeholder for links related to jurisdiction and final edits
 |Sep 30th| Present | Incomplete
+
 
 
 ## Project Description
@@ -124,7 +125,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 - Add links according for each jurisdiction 
 - Add more style
-- Develop a way for users to add and store information for 
+- Develop a way for users to add and store information for jursidiction
 
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.

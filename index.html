@@ -3,39 +3,63 @@
 <head>
   <title>NYC Community Gardens By Jurisdiction</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/796452d248.js"></script>
 </head>
 <body>
-    <header> 
+  <header> 
     <div class="header1"></div>
-    <h1>NYC Community Gardens by Jurisdiction</h1>
+        <h1>NYC Community Gardens by Jurisdiction</h1>
     </div> 
-    <div class="description"> 
-        <p>Jurisdiction...What's that???<br>For community gardens, it refers to the entity that officially has the legal authority to make decisions on how the property of a garden is used. <br>Curious to find out the jurisdiction of a community garden???<br>Enter a community garden name below and see what you discover!</p>
+  
+
+  </header>
+    <div class="container">
+      <div class="image">
+          <img src="/Users/kennethwilliams/SEI_augTOnov/week_3/Tuesday/project1/NYC-Community-Gardens-by-Jurisdiction-/images/rainbow-garden-of-life-and-health_src_HunterCollege.jpg" alt="Garden Image"> 
+      </div>
+
+      <div class="content">
+            <div class="question"> 
+                <h2>Jurisdiction...What's that???</h2>
+            </div> 
+        
+            <div class="answer"> 
+                <p>For community gardens, it refers to the entity that has legal authority to make decisions on how the property of a garden is used. If you're to find out the jurisdiction of a community garden? Enter a community garden name below and see what you discover!</p>
+            </div>
+
+            <div class="form">
+                <form>
+                  <input type="text" name="community garden name" placeholder="zipcode" id="zipcode">
+                  <button id="submit" type="submit" value="Find Jurisdiction">
+                </form>
+        <!-- <button id="reset">Reset</button> -->
+            </div>
+
+            <div class="jurisdiction-outer-div"></div>
+<!-- 
+            <div class="icons">
+                <i class="fas fa-file-signature"></i>
+                <i class="fas fa-handshake"></i>
+                <i class="fas  fa-hand-holding-usd"></i>
+                <i class="fas fa-gavel"></i>
+                <i class="fas fa-user-shield"></i>
+                <i class="fas fa-tools"></i>
+                <i class="fas fa-house-damage"></i>
+            </div> -->
+       </div>
     </div>
-
-</header>
-<div class="slides">
-    
-</div>
-
-<div class="form">
-  <form>
-    <input type="text" name="community garden name"
-    placeholder="community garden name" id="garden">
-  	<input id="submit" type="submit" value="Find Jurisdiction">
-  </form>
-  <!-- <button id="reset">Reset</button> -->
-</div>
+</body>
 
 
+<aside class="usersC">
+
+    <!-- review website for Holberton and try to incorporate into program. -->
+
+</aside>
 
   <!-- Add your code in here -->
-  <ul> 
 
-
-</ul>
-
-  <script src="https://data.cityofnewyork.us/resource/ajxm-kzmj.json"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min"></script>
   <script src="script.js" type="text/javascript" charset="utf-8" async defer></script>
 
 </body>

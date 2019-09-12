@@ -19,23 +19,29 @@ const makeCall = async (event) => {
     console.log(response)
     //console.log(userInput)
 
-    data = response.data;
+    let data = response.data;
 
     for (let i = 0; i < data.length; i += 1) {
         let juris = data[i].jurisdiction;
-    let gardenName = data[i].garden_name;
-    let gardenJuris = document.createElement('div')
-    gardenJuris.className = "jurisdiction"; 
-    gardenJuris.innerHTML = `
-    <p>Community Garden: ${gardenName}</p>
-    <p>Jurisdiction: ${juris}</p>`
+        let gardenName = data[i].garden_name;
+        // let gardenJuris = document.createElement('div')
+        // gardenJuris.className = "jurisdiction"; 
+        // gardenJuris.innerHTML = `
+        // <p>Community Garden: ${gardenName}<br>Jurisdiction: ${juris}</p>`
 
-    jurisOuterDiv.appendChild(gardenJuris);
-
-    
+        function showData() {
+        let card = `<div class="jurisdiction" style="width: 18rem;">
+                <div class="card-body">
+                <h5 class="card-title" id="communityGName">Community Garden: ${gardenName}</h5>
+                <p class="card-text id="gardenInfo">Jurisdiction: ${juris}<p> 
+                <a href"https://greenthumb.nycgovparks.org/pdf/greenthumb-gardeners-handbook-2019-compressed_updated.pdf id="gardenUrl" class="btn btn-primary">Learn more</a>
+                </div> 
+                </div>`; 
+        document.getElementById('backTics').insertAdjacentElement('beforeend', card);
+        // jurisOuterDiv.appendChild(gardenJuris);
+        }
+        showData();
     }
-
-
 
 }
 

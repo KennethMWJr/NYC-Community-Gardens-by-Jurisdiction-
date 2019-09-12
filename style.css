@@ -12,8 +12,9 @@ h1 {
     text-align: center;
     box-shadow: 0px 10px 5px grey;
     padding: 17px;
-    margin: 10px -30px 0px -15px;
+    margin: 10px 100% 0px -15px;
     border-width: 100%;
+    background-color: whitesmoke;
 
 
 }
@@ -37,9 +38,9 @@ h1 {
 img {
     order: 1;
     width: 500px;
-    height: 500px; 
+    height: 550px; 
     margin: 10px 0px 0px -10px; 
-    box-shadow: 10px 0px 5px grey;
+    box-shadow: 10px 0px 10px grey;
 
 }
 /* .image {
@@ -52,12 +53,14 @@ img {
 .content {
     order: 2;
     width: 1000px; 
-    height: 500px;  
+    height: 550px;  
     text-align: left;
     font-size: 18px;
     box-shadow: 0px 0px 5px grey;
     margin: 10px 15px 5px 10px; 
-    -moz-box-shadow: 0px -200px 10px grey; 
+    -moz-box-shadow: 0px -200px 10px grey;
+    /* background-color: whitesmoke; */
+    
 }
 
 #zipcode {
@@ -73,4 +76,242 @@ img {
     margin: 10px 0px 0px 0px;  
     background-color: lightgrey; 
 
+}
+
+.jurisdiction-outer-div {
+    display: flex;
+    width: 900px;
+    height: 300px; 
+    flex-flow: row wrap; 
+    justify-content: space-evenly; 
+
+}
+
+.jurisdiction {
+    width: 200px;
+    height: 20px; 
+    flex-wrap: wrap; 
+}
+
+.jurisdiction p {
+    width: 200px; 
+    height: 20px;
+    font-size: 10px; 
+    padding: 12px; 
+    flex-direction: column; 
+}
+
+@media screen and (max-width: 768px) {
+    * {
+        box-sizing: border-box; 
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+
+
+
+    h1 {
+        order: 1; 
+        width: 100%;
+        height: 80px; 
+        box-shadow: 0px 10px 10px grey;
+        padding: 17px;
+        margin: 10px 100% 0px -5px;
+        border-width: 100%;
+        align-items: center; 
+        position: absolute;
+        background-color: whitesmoke;
+
+    }
+    .container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    img {
+        order: 1;
+        width: 100%;
+        height: 305px; 
+        margin: 100px 10px 15px 2px; 
+        box-shadow: 1px 0px 5px grey;
+    
+    }
+  
+    .image {
+        order: 1;
+        width: 100%; 
+        height: 400px; 
+        padding: 0px;
+    }
+    
+    .content {
+        order: 2;
+        width: 100%; 
+        height: 550px;  
+        text-align: left;
+        font-size: 18px;
+        box-shadow: 0px 0px 5px grey;
+        margin: 15px 15px 5px 2px; 
+        -moz-box-shadow: 0px -200px 10px grey;
+        background-color: whitesmoke;
+    
+    }
+
+    /*
+    .question {
+        text-align: left; 
+        margin: 0px 0px 0px 10px; 
+    } 
+    
+    .answer {
+        margin: 0px 0px 0px 10px; 
+    }
+    
+    #zipcode {
+        width: 200px; 
+        height: 30px;
+        margin: 0px 0px 0px 10px;  
+        font-size: 25px; 
+    }
+    
+    #submit {
+        width: 50px; 
+        height: 25px;
+        margin: 10px 0px 0px 0px;  
+        background-color: lightgrey; 
+    
+    }
+    */
+    
+    .jurisdiction-outer-div {
+        display: flex;
+        width: 100%;
+        height: 300px; 
+        flex-flow: row wrap; 
+        justify-content: space-evenly; 
+    
+    }
+    
+    .jurisdiction {
+        width: 200px;
+        height: 20px; 
+        flex-wrap: wrap; 
+    }
+    
+    .jurisdiction p {
+        width: 200px; 
+        height: 20px;
+        font-size: 10px; 
+        padding: 12px; 
+        flex-direction: column;       
+}
+}
+
+@media screen and (max-width: 375px) {
+    * {
+        box-sizing: border-box; 
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+
+    h1 {
+        order: 1; 
+        width: 100%;
+        height: 140px; 
+        box-shadow: 0px 10px 10px grey;
+        padding: 17px;
+        margin: 10px 100% 0px -5px;
+        border-width: 100%;
+        align-items: center; 
+        position: absolute;
+        background-color: whitesmoke;
+
+    }
+    .container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    img {
+        order: 1;
+        width: 100%;
+        height: 305px; 
+        margin: 160px 10px 15px 2px; 
+        box-shadow: 1px 0px 5px grey;
+    
+    }
+  
+    .image {
+        order: 1;
+        width: 100%; 
+        height: 400px; 
+        padding: 0px;
+        box-shadow: 0px 10px 10px grey;
+    }
+    
+    .content {
+        order: 2;
+        width: 100%; 
+        height: 2000px;  
+        text-align: left;
+        font-size: 18px;
+        box-shadow: 0px 0px 5px grey;
+        margin: 75px 15px 5px 2px; 
+        -moz-box-shadow: 0px -200px 10px grey;
+        background-color: whitesmoke;
+        padding: 0px 5px 0px 0px; 
+    }
+
+    /*
+    .question {
+        text-align: left; 
+        margin: 0px 0px 0px 10px; 
+    } 
+    
+    .answer {
+        margin: 0px 0px 0px 10px; 
+    }
+    
+    #zipcode {
+        width: 200px; 
+        height: 30px;
+        margin: 0px 0px 0px 10px;  
+        font-size: 25px; 
+    }
+    
+    #submit {
+        width: 50px; 
+        height: 25px;
+        margin: 10px 0px 0px 0px;  
+        background-color: lightgrey; 
+    
+    }
+    */
+    
+    .jurisdiction-outer-div {
+        display: flex;
+        width: 100%;
+        height: 300px; 
+        /* flex-flow: row wrap;  */
+        justify-content: space-evenly; 
+    
+    }
+    
+    .jurisdiction {
+        width: 200px;
+        height: 20px; 
+        flex-wrap: wrap; 
+        margin: 20px 0px 10px 0px; 
+    }
+    
+    .jurisdiction p {
+        width: 200px; 
+        height: 20px;
+        font-size: 10px; 
+        padding: 12px; 
+        flex-direction: column;  
+        margin: 10px 0px 10px 0px; 
+    }
 }

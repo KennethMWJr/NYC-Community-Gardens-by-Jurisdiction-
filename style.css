@@ -37,9 +37,10 @@ h1 {
 
 img {
     order: 1;
-    width: 500px;
+    width: 550px;
     height: 550px; 
     margin: 10px 0px 0px -10px; 
+    padding: 0px 0px 0px -200px;
     box-shadow: 10px 0px 10px grey;
 
 }
@@ -75,6 +76,7 @@ img {
     height: 25px;
     margin: 10px 0px 0px 0px;  
     background-color: lightgrey; 
+    position: sticky;
 
 }
 

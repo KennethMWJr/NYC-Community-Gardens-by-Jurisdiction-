@@ -7,13 +7,12 @@
 /* apply font to entire body - */
 
 h1 {
-    width: 100%;
+    width: 1410px;
     height: 80px; 
     text-align: center;
     box-shadow: 0px 10px 5px grey;
     padding: 17px;
-    margin: 10px 100% 0px -15px;
-    border-width: 100%;
+    margin: 10px auto;
     background-color: whitesmoke;
 
 
@@ -33,32 +32,33 @@ h1 {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    width: 100%;
 }
 
 img {
     order: 1;
-    width: 550px;
+    width: 520px;
     height: 550px; 
-    margin: 10px 0px 0px -10px; 
+    margin: 10px 0px 0px -135px; 
     padding: 0px 0px 0px -200px;
     box-shadow: 10px 0px 10px grey;
 
 }
-/* .image {
+.image {
     order: 1;
-    width: 1000px; 
-    height: 500px; 
+    width: 550px; 
+    height: 550px; 
     padding: 0px;
-} */
+} 
 
 .content {
     order: 2;
-    width: 1000px; 
+    width: 868px; 
     height: 550px;  
     text-align: left;
     font-size: 18px;
     box-shadow: 0px 0px 5px grey;
-    margin: 10px 15px 5px 10px; 
+    margin: 10px -30px 5px 10px; 
     -moz-box-shadow: 0px -200px 10px grey;
     /* background-color: whitesmoke; */
     
@@ -82,10 +82,21 @@ img {
 
 .jurisdiction-outer-div {
     display: flex;
-    width: 900px;
+    width: 870px;
     height: 300px; 
     flex-flow: row wrap; 
     justify-content: space-evenly; 
+
+}
+
+.card {
+    padding: 0px 30px 0px 0px; 
+    max-width: 50%;
+
+}
+
+.card-body {
+    width: 250px; 
 
 }
 
@@ -110,12 +121,10 @@ img {
     
     }
 
-
-
     h1 {
         order: 1; 
         width: 100%;
-        height: 80px; 
+        height: 105px; 
         box-shadow: 0px 10px 10px grey;
         padding: 17px;
         margin: 10px 100% 0px -5px;
@@ -133,10 +142,11 @@ img {
 
     img {
         order: 1;
-        width: 100%;
+        width: 760px;
         height: 305px; 
-        margin: 100px 10px 15px 2px; 
+        margin: 115px 10px 15px -125px; 
         box-shadow: 1px 0px 5px grey;
+        align-items: center;
     
     }
   
@@ -149,12 +159,12 @@ img {
     
     .content {
         order: 2;
-        width: 100%; 
+        width: 760px; 
         height: 550px;  
         text-align: left;
         font-size: 18px;
         box-shadow: 0px 0px 5px grey;
-        margin: 15px 15px 5px 2px; 
+        margin: 10px 15px 5px -125px; 
         -moz-box-shadow: 0px -200px 10px grey;
         background-color: whitesmoke;
     

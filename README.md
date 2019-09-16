@@ -3,7 +3,7 @@ Using SODA API from NYC Open Data, discover the jurisdiction of any community ga
 
 # Project Overview
 
-Groups of volunteers in NYC manage community gardens on property with different jurisdicitions - aka ownership. Each jurisdiction has it's own set of policies/agreements setting the parameters for how these groups should interact with the land they use for community gardening purposes. In this project the user will enter the name of a community garden and receive the jurisdiction of that site along with information pertaining to that jurisdiction. 
+Groups of volunteers in NYC manage community gardens on property with different jurisdicitions - aka ownership. Each jurisdiction has it's own set of policies/agreements setting the parameters for how these groups should interact with the land they use for community gardening purposes. In this project the user will enter a zipcode in NYC and receive the community gardens and jurisdiction
 
 ## Project Schedule
 

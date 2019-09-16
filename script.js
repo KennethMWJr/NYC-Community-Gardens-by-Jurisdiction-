@@ -22,44 +22,36 @@ const makeCall = async (event) => {
     while (jurisOuterDiv.lastChild) {
         jurisOuterDiv.removeChild(jurisOuterDiv.lastChild);
     }
+    
+    // if (data.length = 0) {
+    //     alert("There are no registered gardens in this zipcode")
+    // } 
+    
     for (let i = 0; i < data.length; i += 1) {
-        let juris = data[i].jurisdiction;
-        let gardenName = data[i].garden_name;
+        // let juris = data[i].jurisdiction;
+        // let gardenName = data[i].garden_name;
         // let gardenJuris = document.createElement('div')
         // gardenJuris.className = "jurisdiction"; 
         // gardenJuris.innerHTML = `
         // <p>Community Garden: ${gardenName}<br>Jurisdiction: ${juris}</p>`
 
         // jurisOuterDiv.appendChild(gardenJuris);
-        let card = `<div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title" id="cgName">Community Garden: ${response.data[i].garden_name}<br>Jurisdiction: ${response.data[i].jurisdiction}</h5>
-                        <ul class="card-text" id="cgInfo"></ul>
-                        <a href="https://greenthumb.nycgovparks.org/pdf/greenthumb-gardeners-handbook-2019-compressed_updated.pdf" id="gtInfo" class="btn-primary">Learn more</a>
-                    </div>
-                </div>`
-        document.getElementById('backTicks').insertAdjacentHTML('beforeend', card)  
-    }
+        // if (data.length >= 1) {
+                let card = `<div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title" id="cgName">Community Garden: ${response.data[i].garden_name}<br>Jurisdiction: ${response.data[i].jurisdiction}</h5>
+                                <ul class="card-text" id="cgInfo"></ul>
+                                <a href="https://greenthumb.nycgovparks.org/pdf/greenthumb-gardeners-handbook-2019-compressed_updated.pdf" id="gtInfo" class="btn-primary">Learn more</a>
+                            </div>
+                        </div>`
+                document.getElementById('backTicks').insertAdjacentHTML('beforeend', card)     
+        // } else {
+        //     alert("No gardens here")
+        // }          
+    } 
+
 }
 button.addEventListener('click', makeCall);
-
-// function formatInfo() {
-//     let card = `<div class="card" style="width: 18rem;">
-//                     <div class="card-body">
-//                         <h5 class="card-title" id="cgName">Community Garden: ${response.data[i].garden_name}<br>Jurisdiction: ${response.data[i].jurisdiction}</h5>
-//                         <ul class="card-text" id="cgInfo"></ul>
-//                         <a href="https://greenthumb.nycgovparks.org/pdf/greenthumb-gardeners-handbook-2019-compressed_updated.pdf" id="gtInfo" class="btn-primary">Learn more</a>
-//                     </div>
-//                 </div>`;
-//     document.getElementById('backTicks').insertAdjacentHTML('beforeend', card)
-//     console.log(card); 
-
-// }
-// formatInfo();
-
-
-
-
 
 
 

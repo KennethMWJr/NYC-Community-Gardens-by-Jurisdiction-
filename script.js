@@ -28,15 +28,7 @@ const makeCall = async (event) => {
     // } 
     
     for (let i = 0; i < data.length; i += 1) {
-        // let juris = data[i].jurisdiction;
-        // let gardenName = data[i].garden_name;
-        // let gardenJuris = document.createElement('div')
-        // gardenJuris.className = "jurisdiction"; 
-        // gardenJuris.innerHTML = `
-        // <p>Community Garden: ${gardenName}<br>Jurisdiction: ${juris}</p>`
 
-        // jurisOuterDiv.appendChild(gardenJuris);
-        // if (data.length >= 1) {
                 let card = `<div class="card" style="width: 18rem;">
                             <div class="card-body">
                                 <h5 class="card-title" id="cgName">Community Garden: ${response.data[i].garden_name}<br>Jurisdiction: ${response.data[i].jurisdiction}</h5>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset=utf-8 />
   <title>NYC Community Gardens By Jurisdiction</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/796452d248.js"></script>
@@ -9,6 +10,12 @@
       type="text/css"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     />
+    <script src='https://api.mapbox.com/mapbox.js/v3.2.1/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v3.2.1/mapbox.css' rel='stylesheet' />
+    <style>
+      body { margin:0; padding:0; }
+      #mapbox { position: relative; top:0; bottom:0; width:50%; }
+    </style>
 </head>
 <body>
   <header> 
@@ -18,10 +25,12 @@
   
 
   </header>
+  <div id="mapbox" class="image">
+      <!-- <img src="https://api.mapbox.com/mapbox.js/v3.2.1/mapbox.css" alt="map"> -->
+      <!-- <img src="./images/rainbow-garden-of-life-and-health_src_HunterCollege.jpg" alt="Garden Image">  -->
+  </div>
     <div class="container">
-      <div class="image">
-          <img src="./images/rainbow-garden-of-life-and-health_src_HunterCollege.jpg" alt="Garden Image"> 
-      </div>
+      
 
       <div class="content">
         
@@ -63,7 +72,13 @@
 
 </aside>
 
-  <!-- Add your code in here -->
+  
+<script>
+L.mapbox.accessToken = 'pk.eyJ1Ijoia2VubmV0aG13anIiLCJhIjoiY2szcDFvY2tlMWppbjNkcXFrNzVuN3ZnZSJ9.uNCS4A1uyOtyJe-I7MCcYw';
+var map = L.mapbox.map('mapbox')
+    .setView([40, -74.50], 9)
+    .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
+</script>
 
   <script src="https://unpkg.com/axios/dist/axios.min"></script>
   <script src="script.js" type="text/javascript" charset="utf-8" async defer></script>
